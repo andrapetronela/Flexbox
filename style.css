@@ -13,21 +13,20 @@
 body {
     font-family: sans-serif;
     display: grid;
-    grid-template-columns: 1.3fr 6fr;
+    grid-template-columns: 20% 1fr;
     color: var(--grey-dark);
 }
 
 #navbar {
-    grid-column: 1/1;
-    width: 15rem;
+    grid-column: 1/2;
+    width: 20%;
     height: 100%;
-    padding: 2rem;
+    padding: 2.9rem;
     background-color: var(--grey-dark);
     color: var(--grey-light);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow-y: auto;
+    justify-content: space-around;
     position: fixed;
 }
 
@@ -65,8 +64,7 @@ figcaption {
 
 #main-doc {
     grid-column: 2 / 3;
-    position: relative;
-    padding: 1rem 3rem;
+    padding: 3rem;
     line-height: 170%;
 }
 
@@ -86,4 +84,32 @@ code {
 .options {
     padding: 2rem 0 1rem;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+        grid-template-columns: 30% 1fr;
+    }
+    #navbar {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        grid-template-columns: 2rem 1fr;
+    }
+    #navbar {
+        display: none;
+    }
+    
+    .menuButton {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 1rem;
+        background-color: var(--pink);
+        color: var(--grey-dark);
+        position: fixed;
+    }
 }
