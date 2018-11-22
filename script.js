@@ -13,13 +13,13 @@ if (w < 650) {
     document.body.appendChild(title);
     title.style.display = 'block';
     title.style.position = 'absolute';
-    title.style.top = '5rem';
+    title.style.top = '4rem';
     title.style.color = 'var(--pink)';
     title.style.fontWeight = '400';
-    title.style.fontSize = '3rem';
+    title.style.fontSize = '2rem';
     title.style.writingMode = 'vertical-lr';
     title.style.textOrientation = 'upright';
-    title.style.letterSpacing = '-10px';
+    title.style.letterSpacing = '-5px';
   
     let navButton = document.createElement('div');
     let menu = document.createTextNode('Menu');
@@ -48,7 +48,6 @@ if (w < 650) {
         } else {
             navbar.style.display = 'flex';
             navbar.style.width = '70vw';
-            navbar.style.alignItems = 'center';
             navbar.style.transition = 'all 3s';
             navbar.style.zIndex = '1';
             navButton.textContent = 'Close';
