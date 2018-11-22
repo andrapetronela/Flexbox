@@ -16,6 +16,7 @@ if (w < 650) {
     function hideNavigation() {
         navbar.style.display = 'none'; 
         navButton.textContent = 'Menu';
+        main_doc.style.filter = 'blur(0)';
     }
     
     navButton.addEventListener('click', showNavbar);
