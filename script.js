@@ -26,6 +26,7 @@ if (w < 650) {
         if (navbar.style.display !== 'none') {
             navbar.style.display = 'none';
             navButton.textContent = 'Menu';
+            main_doc.style.filter = 'blur(0)';
         } else {
             navbar.style.display = 'flex';
             navbar.style.width = '50vw';
