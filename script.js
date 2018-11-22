@@ -1,8 +1,26 @@
-let w = window.outerWidth;
+let w = window.innerWidth;
+
 let navbar = document.querySelector('#navbar');
 let main_doc = document.querySelector('#main-doc');
 
 if (w < 650) {
+    
+    // create page title for mobile
+    
+    let title = document.createElement('h1');
+    let text = document.createTextNode('CSS Flexbox');
+    title.appendChild(text);
+    document.body.appendChild(title);
+    title.style.display = 'block';
+    title.style.position = 'absolute';
+    title.style.top = '5rem';
+    title.style.color = 'var(--pink)';
+    title.style.fontWeight = '400';
+    title.style.fontSize = '3rem';
+    title.style.writingMode = 'vertical-lr';
+    title.style.textOrientation = 'upright';
+    title.style.letterSpacing = '-6px';
+  
     let navButton = document.createElement('div');
     let menu = document.createTextNode('Menu');
     navButton.appendChild(menu);
@@ -18,6 +36,7 @@ if (w < 650) {
         navbar.style.display = 'none'; 
         navButton.textContent = 'Menu';
         main_doc.style.filter = 'blur(0)';
+        title.style.display = 'none';
     }
     
     function showNavbar() {
@@ -27,7 +46,8 @@ if (w < 650) {
             main_doc.style.filter = 'blur(0)';
         } else {
             navbar.style.display = 'flex';
-            navbar.style.width = '50vw';
+            navbar.style.width = '70vw';
+            navbar.style.alignItems = 'center';
             navbar.style.transition = 'all 3s';
             navbar.style.zIndex = '1';
             navButton.textContent = 'Close';
