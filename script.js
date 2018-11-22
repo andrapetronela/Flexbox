@@ -19,7 +19,7 @@ if (w < 650) {
     title.style.fontSize = '3rem';
     title.style.writingMode = 'vertical-lr';
     title.style.textOrientation = 'upright';
-    title.style.letterSpacing = '-6px';
+    title.style.letterSpacing = '-10px';
   
     let navButton = document.createElement('div');
     let menu = document.createTextNode('Menu');
@@ -44,6 +44,7 @@ if (w < 650) {
             navbar.style.display = 'none';
             navButton.textContent = 'Menu';
             main_doc.style.filter = 'blur(0)';
+            title.style.display = 'none';
         } else {
             navbar.style.display = 'flex';
             navbar.style.width = '70vw';
@@ -55,6 +56,8 @@ if (w < 650) {
             main_doc.style.filter = 'blur(2px)';
             
             main_doc.addEventListener('click', hideNavigation);
+            
+            title.style.display = 'block';
         }  
     }
 } 
