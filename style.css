@@ -107,9 +107,6 @@ code {
     body {
         grid-template-columns: 2rem 1fr;
     }
-    #navbar {
-        display: none;
-    }
     
     #main-doc {
         text-align: left;

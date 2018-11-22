@@ -4,7 +4,7 @@ let navbar = document.querySelector('#navbar');
 let main_doc = document.querySelector('#main-doc');
 
 if (w < 650) {
-    
+    navbar.style.display = 'none';
     // create page title for mobile
     
     let title = document.createElement('h1');
