@@ -12,6 +12,7 @@ if (w < 650) {
     navButton.style.cursor = 'pointer';
     
     navbar.addEventListener('click', hideNavigation);
+    navButton.addEventListener('click', showNavbar);
     
     function hideNavigation() {
         navbar.style.display = 'none'; 
@@ -19,11 +20,7 @@ if (w < 650) {
         main_doc.style.filter = 'blur(0)';
     }
     
-    navButton.addEventListener('click', showNavbar);
-    
-    
     function showNavbar() {
-        
         if (navbar.style.display !== 'none') {
             navbar.style.display = 'none';
             navButton.textContent = 'Menu';
@@ -31,10 +28,13 @@ if (w < 650) {
         } else {
             navbar.style.display = 'flex';
             navbar.style.width = '50vw';
-            navbar.style.transition = '3s';
+            navbar.style.transition = 'all 3s';
+            navbar.style.zIndex = '1';
             navButton.textContent = 'Close';
+            navButton.style.zIndex = '2';
             main_doc.style.filter = 'blur(2px)';
-            main_doc.style.zIndex = '-5';
+            
+            main_doc.addEventListener('click', hideNavigation);
         }  
     }
 } 
