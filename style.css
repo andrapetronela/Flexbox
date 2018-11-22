@@ -15,6 +15,7 @@ body {
     display: grid;
     grid-template-columns: 20% 1fr;
     color: var(--grey-dark);
+    overflow-x: hidden;
 }
 
 #navbar {
@@ -104,6 +105,8 @@ code {
     }
     
     .menuButton {
+        grid-column: 1 / 2;
+        display: block;
         position: absolute;
         left: 0;
         top: 0;
