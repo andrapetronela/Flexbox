@@ -13,7 +13,9 @@ if (w < 650) {
     document.body.appendChild(title);
     title.style.display = 'block';
     title.style.position = 'absolute';
-    title.style.top = '4rem';
+    title.style.position = 'fixed';
+    title.style.left = '1rem';
+    title.style.top = '5rem';
     title.style.color = 'var(--pink)';
     title.style.fontWeight = '400';
     title.style.fontSize = '2rem';
