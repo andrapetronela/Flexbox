@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <title>CSS Flexbox</title>
     <link href="style.css" rel="stylesheet">
@@ -64,7 +71,7 @@
         </section>
         <section class="main-section" id="justify-content">
             <header>
-                Align elements using <code>justify-content</code> 
+                <code>justify-content</code> 
             </header>
             <p>A flex container set as a column places the flex items in a vertical stack from top-to-bottom. For each, the direction the flex items are arranged is called the main axis. For a row, this is a horizontal line that cuts through each item. And for a column, the main axis is a vertical line through the items.
 
@@ -97,7 +104,7 @@
         </section>
         <section class="main-section" id="align-items">
             <header>
-                Align elements using <code>align-items</code>
+                <code>align-items</code>
             </header>
             <p>The <code>align-items</code> property is similar to . Recall that the <code>justify-content</code> property aligned flex items along the main axis. For rows, the main axis is a horizontal line and for columns it is a vertical line.
             Flex containers also have a cross axis which is the opposite of the main axis. For rows, the cross axis is vertical and for columns, the cross axis is horizontal.
@@ -131,7 +138,7 @@
         </section>
         <section class="main-section" id="flex-wrap">
             <header>
-                Split elements into multiple rows or columns with <code>flex-wrap</code>
+                <code>flex-wrap</code>
             </header>
             <p>CSS flexbox has a feature to split a flex item into multiple rows (or columns). By default, a flex container will fit all flex items together. For example, a row will all be on one line.
             However, using the flex-wrap property, it tells CSS to wrap items. This means extra items move into a new row or column. The break point of where the wrapping happens depends on the size of the items and the size of the container.</p>
@@ -159,7 +166,7 @@
         </section>
         <section class="main-section" id="flex-shrink">
             <header>
-                Shrink items with <code>flex-shrink</code> 
+                <code>flex-shrink</code> 
             </header>
             <p>When <code>flex-shrink</code> property is used, it allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
             The flex-shrink property takes numbers as values. The higher the number, the more it will shrink compared to the other items in the container. For example, if one item has a flex-shrink value of 1 and the other has a flex-shrink value of 2, the one with the value of 2 will shrink two times as much as the other.</p>
@@ -173,7 +180,7 @@
         </section>
         <section class="main-section" id="flex-grow">
             <header>
-                Expand elements with <code>flex-grow</code>
+                <code>flex-grow</code>
             </header>
             <p>The opposite of <code>flex-shrink</code> is the <code>flex-grow</code> property. Recall that <code>flex-shrink</code> controls the size of the items when the container shrinks. The <code>flex-grow</code> property controls the size of items when the parent container expands.
             Using a similar example from the last challenge, if one item has a <code>flex-grow</code> value of 1 and the other has a <code>flex-grow</code> value of 3, the one with the value of 3 will grow three times as much as the other.</p>
@@ -187,7 +194,7 @@
         </section>
         <section class="main-section" id="flex-basis">
             <header>
-                Set the initial size of an item with <code>flex-basis</code>
+                <code>flex-basis</code>
             </header>
             <p>The <code>flex-basis</code> property specifies the initial size of the item before CSS makes adjustments with <code>flex-shrink</code> or <code>flex-grow</code>.
             The units used by the <code>flex-basis</code> property are the same as other size properties (<code>px</code>, <code>em</code>, <code>%</code>, etc.). The value <code>auto</code> sizes items based on the content.</p>
@@ -208,7 +215,7 @@
             The default property settings are <code>flex: 0 1 auto</code>.</p>
         </section>
         <section class="main-section" id="order">
-            <header>Set the order of elements with <code>order</code></header>
+            <header><code>order</code></header>
             <p>The order property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.</p>
             <figure>
                 <img src="order.png" alt="" class="main-img">

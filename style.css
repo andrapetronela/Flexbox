@@ -123,4 +123,11 @@ code {
         color: var(--grey-dark);
         position: fixed;
     }
+    
+    .displayBlock {
+        display: block;
+    }
+    .displayNone {
+        display: none;
+    }
 }
